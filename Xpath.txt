@@ -1,0 +1,31 @@
+Getmultiple Data from Exce
+---------------------------
+
+
+public Object[][] getMultipleData(String filePath,String sheet){
+FileInputStream fis=new FileInputStream(filePath);
+Workbook wb=WorkbookFactory.create(fis);
+Sheet sh=wb.getSheet(sheet);
+Object[][] arr=new object[sh.getLastRowNum()+1][sh.getRow().getLastCellNum()];
+for(int i=0;i<=sh.getLastRowNum();i++)
+{
+for(int j=0;j<=sh.getRow().getLastCellNum();j++)
+{
+
+arr[i][j]=sh.getRow(i).getCell1(j).getStringCellvalue();
+}
+}
+retunr arr;
+
+
+}
+
+
+
+
+HMS=https://github.com/ChandanRayaappa/HospitalManagementSystameByCRVDBK.git
+TOken=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
+
+
+
+descendant=//div[.='APPLE iPhone 13 Pro Max (Graphite, 128 GB)']/ancestor::a[@class='_1fQZEK']/descendant::div
